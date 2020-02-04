@@ -5,15 +5,15 @@
         echo '<form action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post">';
         echo '<p>';
         echo 'Your Name (required) <br />';
-        echo '<input type="text" name="testi-name" pattern="[a-zA-Z0-9 ]+" value="' . ( isset( $_POST["testi-name"] ) ? esc_attr( $_POST["testi-name"] ) : '' ) . '" size="40" />';
+        echo '<input type="text" name="testi-name" pattern="[a-zA-Z0-9 ]+" value="' . ( isset( $_POST["testi-name"] ) ? esc_attr( $_POST["testi-name"] ) : '' ) . '" size="40" required/>';
         echo '</p>';
         echo '<p>';
         echo 'Your Email (required) <br />';
-        echo '<input type="email" name="testi-email" value="' . ( isset( $_POST["testi-email"] ) ? esc_attr( $_POST["testi-email"] ) : '' ) . '" size="40" />';
+        echo '<input type="email" name="testi-email" value="' . ( isset( $_POST["testi-email"] ) ? esc_attr( $_POST["testi-email"] ) : '' ) . '" size="40" required/>';
         echo '</p>';
         echo '<p>';
         echo 'Your Phone Number (required) <br />';
-        echo '<input type="text" name="testi-phone_number" value="' . ( isset( $_POST["testi-phone_number"] ) ? esc_attr( $_POST["testi-phone_number"] ) : '' ) . '" size="40" />';
+        echo '<input type="text" name="testi-phone_number" value="' . ( isset( $_POST["testi-phone_number"] ) ? esc_attr( $_POST["testi-phone_number"] ) : '' ) . '" size="40" required />';
         echo '</p>';
         echo '<p>';
         echo 'Your Testimonial <br />';
