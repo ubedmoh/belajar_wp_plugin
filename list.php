@@ -1,15 +1,15 @@
 <?php
 
-    add_action( 'admin_menu', 'my_admin_menu' );
+    add_action( 'admin_menu', 'testimoni_menu' );
 
-    function my_admin_menu() {
+    function testimoni_menu() {
         add_menu_page( 'Testimonial', 'Testimonial', 'manage_options', 'plugins/wt1/list.php', 'myplguin_admin_page', 'dashicons-tickets', 6  );
     }
 
-    function myplguin_admin_page(){
+    function testimoni_list(){
         ?>
         <div class="wrap">
-            <h2>Welcome To My Plugin</h2>
+            <h2>Testimoni List</h2>
         </div>
 
         <?php
